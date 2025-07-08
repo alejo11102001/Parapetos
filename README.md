@@ -1,81 +1,103 @@
 # Parapetos
 
-Parapetos es una plataforma web desarrollada con tecnologías frontend modernas, orientada a ofrecer una experiencia de usuario fluida e intuitiva. Este proyecto simula un sistema que puede incluir funcionalidades como inicio de sesión, pagos, y visualización de contenidos en diferentes dispositivos (responsive).
+**Parapetos** es una aplicación web interactiva desarrollada con tecnologías web modernas. Su estructura modular y escalable permite una navegación fluida y una experiencia de usuario enfocada en la simplicidad y el diseño responsive. Aunque actualmente es una maqueta funcional, sienta las bases para una plataforma más robusta con autenticación, gestión de usuarios y sistema de pagos.
 
 ---
 
-## Características Principales
+## Objetivo del Proyecto
 
-* Diseño responsivo adaptado para dispositivos de escritorio.
-* Múltiples estilos CSS organizados por funcionalidades (login, pagos, etc).
-* Uso de recursos estáticos (imágenes, logos, etc).
-* Estructura escalable para desarrollo futuro.
-* Mock de datos con `db.json`.
+El objetivo principal de Robin Project es ofrecer una interfaz visualmente atractiva y funcional para simular flujos comunes en aplicaciones web como:
+
+* Inicio de sesión de usuarios.
+* Visualización de información en diferentes vistas.
+* Simulación de un sistema de pago.
+
+Esto lo convierte en un excelente punto de partida para desarrolladores que deseen aprender sobre estructuración de proyectos web reales.
 
 ---
 
 ## Estructura del Proyecto
 
 ```
-Parapetos /
-├── index.html                # Página principal
-├── package.json              # Dependencias y scripts del proyecto
-├── db.json                   # Base de datos simulada (mock)
+Parapetos
+/
+├── index.html                  # Página principal de la aplicación
+├── package.json                # Definición de dependencias y scripts del proyecto
+├── package-lock.json           # Registro de versiones exactas instaladas
+├── db.json                     # Base de datos mock para pruebas locales
+├── .vscode/
+│   └── settings.json           # Configuración específica del editor VSCode
 ├── assets/
-│   ├── css/
+│   ├── css/                    # Archivos de estilos organizados por vistas
 │   │   ├── desktop.css
 │   │   ├── general_styles.css
 │   │   ├── login.css
 │   │   └── pay.css
-│   └── images/
+│   └── images/                 # Recursos gráficos y logos
 │       └── logo.png
-├── .vscode/
-│   └── settings.json         # Configuración del editor
-└── ...
+└── ...                         # Posibles archivos JS o adicionales
 ```
 
 ---
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
-* **HTML5**
-* **CSS3**
-* **JavaScript** (por definir si se usa en archivos JS específicos)
-* **Node.js** (presente `package.json`, posiblemente para gestionar dependencias)
+* **HTML5**: Estructura del contenido.
+* **CSS3**: Estilos visuales y diseño responsivo.
+* **JavaScript** (si aplica en versiones futuras): Comportamiento e interactividad.
+* **Node.js**: Utilizado para gestionar dependencias y ejecutar servidores de desarrollo.
+* **Live Server** (sugerido): Para pruebas locales en tiempo real.
 
 ---
 
-## Instalación y Ejecución Local
+## Instalación y Uso Local
 
-1. Clona este repositorio o descarga el ZIP.
+Sigue los siguientes pasos para ejecutar el proyecto en tu máquina local:
+
+### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/usuario/Robin_project.git
-cd Robin_project
+git clone https://github.com/usuario/Parapetos.git
+cd Parapetos
 ```
 
-2. Instala las dependencias (si aplica):
+### 2. Instalar Dependencias
+
+Asegúrate de tener [Node.js](https://nodejs.org) instalado. Luego ejecuta:
 
 ```bash
 npm install
 ```
 
-3. Ejecuta el proyecto (si usa live-server u otro entorno):
+### 3. Ejecutar Proyecto
+
+Puedes usar `live-server` para ejecutar el proyecto:
 
 ```bash
 npx live-server
 ```
 
-> Asegúrate de tener Node.js instalado en tu sistema.
+O simplemente abrir `index.html` en tu navegador manualmente.
 
 ---
 
-## Estado del Proyecto
+## Capturas de Pantalla
+## Pantalla inicio:
+![alt text](image.png)
 
-Este proyecto se encuentra en fase de desarrollo inicial. Está orientado al aprendizaje y prueba de conceptos como:
+## Login admin:
+![alt text](image-1.png)
 
-* Modularización del diseño CSS.
-* Organización de archivos.
-* Simulación de datos con JSON.
+## Admin dashboard:
+![alt text](image-2.png)
+
+## 🛠 Funcionalidades Implementadas
+
+* [x] Diseño modular y responsivo.
+* [x] Página de inicio con estructura clara.
+* [x] Sistema básico de estilos organizados por contexto.
+* [x] Mock de base de datos para pruebas.
 
 ---
+
+*Parapetos** © 2025
