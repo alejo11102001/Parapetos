@@ -1,0 +1,100 @@
+body {
+font-family: 'Fredoka One', cursive;
+background-color: #fff5f8;
+margin: 0;
+padding-top: 0;
+}
+
+.navbar {
+background: linear-gradient(180deg, #ff4081, #ff8a65) !important;
+}
+
+.nav-link {
+color: #ffffff !important;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #ffee58 !important;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+}
+
+.btn-danger {
+background: linear-gradient(to right, #ff80ab, #ff4081);
+border: none;
+font-weight: bold;
+}
+
+.btn-danger:hover {
+background: linear-gradient(to right, #f06292, #ec407a);
+}
+
+main h1 {
+color: #ff4081;
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+#content {
+background: #ffffff;
+border-radius: 20px;
+padding: 30px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+#content h2 {
+color: #ff4081;
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.img-fluid{
+    max-width: 300px;
+}
+
+.event-img{
+    width: 80px;
+    border-radius: 8px;
+}
+
+.div-img{
+    height: 60vh;
+}
+
+/* Sidebar normal */
+.sidebar {
+    transition: all 0.3s ease;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+/* Sidebar colapsado */
+.sidebar.collapsed {
+    min-width: 80px !important;
+    max-width: 80px !important;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+
+.sidebar.collapsed .nav-link span,
+.sidebar.collapsed .btn span,
+.sidebar.collapsed > div > a span {
+    display: none !important;
+}
+
+#toggleSidebar {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+}

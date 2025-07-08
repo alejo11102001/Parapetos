@@ -1,0 +1,42 @@
+/* Hereda tipografía y fondo general */
+body {
+font-family: 'Fredoka One', cursive;
+background-color: #fff5f8;
+}
+
+/* Tarjeta de la pasarela de pago */
+.payment-card {
+border-radius: 25px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+background: linear-gradient(to right, #ff80ab, #ff4081);
+}
+
+/* Colores input */
+.payment-card .form-control {
+border-radius: 12px;
+border: none;
+padding: 12px 15px;
+font-size: 1rem;
+}
+
+.payment-card .form-control:focus {
+outline: none;
+box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4);
+border: none;
+}
+
+/* Botón amarillo coherente con tu tema */
+.btn-yellow {
+background: linear-gradient(to right, #ffd740, #ffb300);
+color: #333;
+font-weight: bold;
+border: none;
+padding: 12px;
+border-radius: 15px;
+transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+background: linear-gradient(to right, #fff176, #fdd835);
+color: #000;
+}

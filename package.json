@@ -1,0 +1,20 @@
+{
+  "name": "robin_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3",
+    "nodemailer": "^7.0.5",
+    "twilio": "^5.7.2"
+  }
+}
