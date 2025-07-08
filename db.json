@@ -1,0 +1,51 @@
+{
+  "admins": [
+    {
+      "email": "admin@example.com",
+      "password": "ramiro2",
+      "id": "96f7"
+    }
+  ],
+  "events": [
+    {
+      "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1751918674/zxs3bcidsdu5iooxipce.jpg",
+      "title": "Fiesta de Superhéroes Kids",
+      "description": "¡Reúne a tus pequeños superhéroes para una aventura épica llena de juegos, disfraces y mucha diversión! Una fiesta llena de colores, tortas temáticas y actividades inspiradas en los personajes más poderosos del universo infantil.",
+      "status": "Activo",
+      "date": "2025-07-25",
+      "price": 60,
+      "capacity": 30,
+      "id": "7869"
+    },
+    {
+      "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1751918730/sj0shuzsoalinva4sgus.jpg",
+      "title": "Fiesta Bajo el Mar con Bob Esponja",
+      "description": "Sumérgete en Fondo de Bikini con Bob Esponja, Patricio y sus amigos en una fiesta temática repleta de decoración marina, estaciones de dulces y juegos inspirados en el mundo submarino más divertido de la televisión.",
+      "status": "Activo",
+      "date": "2025-07-27",
+      "price": 55,
+      "capacity": 30,
+      "id": "7e5b"
+    },
+    {
+      "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1751918826/za21xmm9beuabbbymvrw.jpg",
+      "title": "Misión Cachorros - Fiesta Paw Patrol",
+      "description": "¡Los valientes cachorros de la Patrulla Canina llegan para celebrar en grande! Música, bailes, personajes en vivo y muchas misiones divertidas harán que los niños vivan una experiencia inolvidable junto a Chase, Skye, Marshall y compañía.",
+      "status": "Cancelado",
+      "date": "2025-08-03",
+      "price": 70,
+      "capacity": 40,
+      "id": "a091"
+    }
+  ],
+  "suscribers": [],
+  "contact": [
+    {
+      "id": "15f8",
+      "name": "diego zuluaga",
+      "email": "diegozulu987@gmail.com",
+      "message": "hola quiero evento",
+      "date": "2025-07-08"
+    }
+  ]
+}
