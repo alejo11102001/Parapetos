@@ -164,7 +164,6 @@ function viewSuscriptions() {
                             .then(res => {
                                 if (!res.ok) throw new Error("Error al eliminar");
                                 actualizarContadorSuscriptores(); // Actualiza contador en Escritorio
-                                viewSuscriptions(); // ✅ recarga toda la vista
                             })
                             .catch(err => alert(err.message));
                     }
@@ -282,33 +281,17 @@ function viewContact() {
 
             // Enviar respuesta (simulado)
             const formRespuesta = document.getElementById("form-responder");
-            formRespuesta.addEventListener("submit", async function (e) {
-            e.preventDefault();
+            formRespuesta.addEventListener("submit", function (e) {
+                e.preventDefault();
 
-            const email = document.getElementById("correo-destino").value;
-            const mensaje = document.getElementById("mensaje-respuesta").value;
+                const email = document.getElementById("correo-destino").value;
+                const mensaje = document.getElementById("mensaje-respuesta").value;
 
-            try {
-                const res = await fetch("http://localhost:4003/enviar-respuesta", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email, mensaje })
-                });
-
-                const data = await res.json();
-
-                if (!data.success) throw new Error(data.error || "Fallo en el envío");
-
-                alert("✅ Correo enviado correctamente a " + email);
-
+                // Aquí podrías usar un endpoint real de envío de correo desde tu backend o servicio externo.
+                alert(`Correo enviado a ${email} con el mensaje:\n\n${mensaje}`);
                 const modal = bootstrap.Modal.getInstance(document.getElementById("modalResponder"));
                 modal.hide();
-            } catch (err) {
-                console.error("Error al enviar:", err);
-                alert("❌ Error al enviar correo");
-            }
-        });
-
+            });
 
             // Filtro por correo
             const input = document.getElementById("buscador-contacto");
@@ -462,7 +445,7 @@ function viewEvents() {
                 capacity: parseInt(formData.get("capacity"))
             };
 
-            return fetch("http://localhost:4001/nuevo-evento", {
+            return fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(newEvent)
@@ -470,7 +453,7 @@ function viewEvents() {
         })
         .then(res => res.json())
         .then(data => {
-            renderEvent(data.evento);
+            renderEvent(data);
             this.reset();
             document.getElementById("form-add-event").style.display = "none";
         })
