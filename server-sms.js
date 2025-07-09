@@ -8,8 +8,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // 🔒 Tu SID y token de Twilio (ocúltalos en producción)
-const accountSid = 'AC481a534a1c0422e7e973a7957068c6cf';
-const authToken = 'a5ddab22f8c985dd6585839f3b02c6aa';
+const accountSid = '<tu_account_sid>';
+const authToken = '<tu_auth_token>';
 const client = twilio(accountSid, authToken);
 
 // Ruta para enviar SMS
@@ -19,8 +19,8 @@ app.post("/send-sms", async (req, res) => {
     try {
         const sms = await client.messages.create({
             body: `Nuevo mensaje de contacto\nNombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`,
-            from: "+13513335987", // tu número de Twilio
-            to: "+573205663330" // tu número personal o del admin
+            from: "<tu_numero_twilio>", // tu número de Twilio
+            to: "<tu_numero_personal>" // tu número personal o del admin
         });
 
         res.json({ success: true, sid: sms.sid });

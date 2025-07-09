@@ -69,6 +69,21 @@ margin-bottom: 20px;
     max-width: 250px;
 }
 
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #ff6a9f, #ff9f7c);
+    color: white;
+}
+
+main {
+    margin-left: 150px; /* Igual al ancho del sidebar */
+}
+
 /* Sidebar colapsado */
 .sidebar.collapsed {
     min-width: 80px !important;
@@ -97,4 +112,8 @@ margin-bottom: 20px;
 
 .nav-link i {
     font-size: 1.2rem;
+}
+
+#sidebar .mt-auto {
+    margin-top: auto;
 }

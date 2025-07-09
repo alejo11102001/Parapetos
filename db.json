@@ -21,7 +21,7 @@
       "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1751918730/sj0shuzsoalinva4sgus.jpg",
       "title": "Fiesta Bajo el Mar con Bob Esponja",
       "description": "Sumérgete en Fondo de Bikini con Bob Esponja, Patricio y sus amigos en una fiesta temática repleta de decoración marina, estaciones de dulces y juegos inspirados en el mundo submarino más divertido de la televisión.",
-      "status": "Activo",
+      "status": "Inactivo",
       "date": "2025-07-27",
       "price": 55,
       "capacity": 30,
@@ -31,21 +31,61 @@
       "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1751918826/za21xmm9beuabbbymvrw.jpg",
       "title": "Misión Cachorros - Fiesta Paw Patrol",
       "description": "¡Los valientes cachorros de la Patrulla Canina llegan para celebrar en grande! Música, bailes, personajes en vivo y muchas misiones divertidas harán que los niños vivan una experiencia inolvidable junto a Chase, Skye, Marshall y compañía.",
-      "status": "Cancelado",
+      "status": "Activo",
       "date": "2025-08-03",
       "price": 70,
       "capacity": 40,
       "id": "a091"
+    },
+    {
+      "id": "6cd8",
+      "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1752023134/ptfxrq9h7oboq95u6wbi.jpg",
+      "title": "hola",
+      "description": "hoa",
+      "status": "Activo",
+      "date": "2025-07-23",
+      "price": 1222,
+      "capacity": 1222
+    },
+    {
+      "id": "25f5",
+      "image": "https://res.cloudinary.com/dip8u9o6u/image/upload/v1752023148/izyiqhcg1r399kh9fr1z.jpg",
+      "title": "hola",
+      "description": "hoa",
+      "status": "Activo",
+      "date": "2025-07-23",
+      "price": 1222,
+      "capacity": 1222
     }
   ],
-  "suscribers": [],
+  "suscribers": [
+    {
+      "id": "41d7",
+      "email": "jerorrpo@gmail.com"
+    },
+    {
+      "id": "27e3",
+      "email": "diego.zuluagaye@amigo.edu.co"
+    },
+    {
+      "id": "cb0f",
+      "email": "diego.zuluagaye@amigo.edu.co"
+    }
+  ],
   "contact": [
     {
-      "id": "15f8",
+      "id": "43a0",
       "name": "diego zuluaga",
-      "email": "diegozulu987@gmail.com",
-      "message": "hola quiero evento",
+      "email": "diego.zuluagaye@amigo.edu.co",
+      "message": "hola",
       "date": "2025-07-08"
+    },
+    {
+      "id": "ee67",
+      "name": "jeronimo",
+      "email": "diego.zuluagaye@amigo.edu.co",
+      "message": "hola, quiero publicar un evento",
+      "date": "2025-07-09"
     }
   ]
 }
